@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirigiendo: Pago Fallido</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      text-align: center;
+      padding-top: 50px;
+      color: #333;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      // Cambia la URL deep link según tu configuración.
+      window.location.href = "rochallengue://payment/callback?status=failed";
+    }
+  </script>
+</head>
+<body>
+  <p>El pago ha sido rechazado. Redirigiendo a la aplicación...</p>
+</body>
+</html>
